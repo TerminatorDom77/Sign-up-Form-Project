@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign-up Form</title>
+    <link rel="stylesheet" href="styles.css">
+    <script>
+        function validatePassword(){
+            let password = document.getElementById("password");
+            let confirm = document.getElementById("confirm");
+            if (password.value == confirm.value){
+                return true;
+            } else {
+                return false
+            }
+        }
+    </script>
+</head>
+<body>
+    <div>
+        <img src="odin-lined.png" alt="Odin picture" id="odin">
+        <div id="text">Odin</div>
+    </div>
+    <div id="page-layout">
+        <img src="Forest.jpg" alt="Forest">
+        <div id="main-layout">
+            <p>This is not a real online service! You know you need something like this
+                in your life to help you realize your dreams. Sign up now to get started.
+            </p>
+            <div style="padding: 20px;">Let's do this!</div>
+            <form action="" method="post" id="myform" onsubmit="return validatePassword()">
+                <div>
+                    <label for="firstname">First Name</label>
+                    <br>
+                    <input type="text" id="firstname">
+                </div>
+                <div>
+                    <label for="lastname">Last Name</label>
+                    <br>
+                    <input type="text" id="lastname">
+                </div>
+                <div>
+                    <label for="email">Email</label>
+                    <br>
+                    <input type="email" id="email">
+                </div>
+                <div>
+                    <label for="phonenumber">Phone Number</label>
+                    <br>
+                    <input type="text" id="phonenumber" placeholder="###-###-####"
+                    pattern="^\d{3}[-.\s]?\d{3}[-.\s]?\d{4}$">
+                </div>
+                <div>
+                    <label for="password">Password</label>
+                    <br>
+                    <input type="password" id="password" required="">
+                </div>
+                <div>
+                    <label for="confirm">Confirm Password</label>
+                    <br>
+                    <input type="password" id="confirm" required>
+                </div>
+            </form>
+            <div id="buttons">
+                <button form="myform" type="submit">Create Account</button>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

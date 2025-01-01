@@ -1,0 +1,80 @@
+#page-layout {
+    display: flex;
+}
+#main-layout {
+    display: flex;
+    flex-direction: column;
+}
+#buttons {
+    height: 33%; 
+    background-color: rgb(228, 225, 225);
+    padding: 10px;
+}
+#odin {
+    position: absolute;
+    height: 20%;
+    top: 250px;
+    left: 150px;
+    background-color: rgba(0, 0, 0, 0.39);
+}
+#text {
+    position: absolute;
+    top: 300px;
+    left: 254px;
+    font-size: 34pt;
+    font-family: 'Norse Bold';
+    background-color: rgba(0, 0, 0, 0.39);
+    color: white;
+}
+body {
+    margin: 0px;
+    font-family: Arial, Helvetica, sans-serif
+}
+img {
+    height: 100vh;
+}
+p {
+    margin-top: 0px;
+    height: 33%;
+    background-color: rgb(228, 225, 225);
+    padding: 10px;
+    font-size: 16pt;
+    display: flex;
+    align-items: center;
+}
+form {
+    height: 34%;
+    padding: 20px;
+    font-size: 12pt;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+input {
+    height: 20px;
+    border: 3px solid #E5E7EB;
+    border-radius: 5px;
+}
+input:focus {
+    border-color: rgb(75, 75, 252);
+    outline: none;
+}
+input:invalid {
+    border-color: red;
+}
+button {
+    font-weight: bold;
+    margin-left: 20px;
+    width: 150px;
+    height: 40px;
+    border-radius: 10px;
+    background-color: #596D48;
+    border-color: #E5E7EB;
+    color: white;
+}
+@font-face {
+    font-family: "Norse Bold";
+    src: url("Norse-Bold.otf") format("opentype");
+    font-weight: normal;
+    font-style: normal;
+}
